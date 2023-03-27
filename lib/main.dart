@@ -8,20 +8,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return const MaterialApp(
       title: 'Material App',
-      //home: const ListMenuScreen(),
-      initialRoute: RouteConfigs.initialRoute,
-      routes: RouteConfigs.routesMap,
-      onGenerateRoute: (settings) => RouteConfigs.onGenerateRoute(settings),
-      theme: ThemeData.light().copyWith(
-        primaryColor: Colors.pinkAccent,
-        appBarTheme: const AppBarTheme(
-          color: Colors.pinkAccent,
-          elevation: 10
-        )
-      )
     );
   }
 }
