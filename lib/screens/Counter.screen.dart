@@ -91,6 +91,7 @@ class CustomFloatingActionBtn extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         FloatingActionButton(
+          heroTag: "btn1",
           backgroundColor: Colors.lightGreen,
           onPressed: () => decreaseFn(),
           tooltip: 'Increment Counter',
@@ -98,6 +99,7 @@ class CustomFloatingActionBtn extends StatelessWidget {
         ),
         const SizedBox( width: 20,),
         FloatingActionButton(
+          heroTag: "btn2",
           backgroundColor: Colors.lightGreen,
           onPressed: () => resetFn(),
           tooltip: 'Increment Counter',
@@ -105,6 +107,7 @@ class CustomFloatingActionBtn extends StatelessWidget {
         ),
         const SizedBox( width: 20,),
         FloatingActionButton(
+          heroTag: "btn3",
           backgroundColor: Colors.lightGreen,
           onPressed: () => increaseFn(),
           tooltip: 'Increment Counter',
